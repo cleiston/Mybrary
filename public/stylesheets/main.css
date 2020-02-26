@@ -30,3 +30,16 @@ body {
     color: hsl(var(--color-danger-hue), 100%, 50%);
 }
 
+.inner-container {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
